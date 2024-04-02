@@ -1,0 +1,49 @@
+/* RESET */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* MAIN */
+.title{
+    text-align: center;
+    margin-top: 30px;
+}
+.user-inputs{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+.user-inputs input{
+    width: 350px;
+    padding: 8px;
+    margin-right: 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.user-inputs button{
+    padding: 8px;
+    margin-right: 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+/* TASKS */
+.user-tasks{
+    background-color: aquamarine;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid coral;
+}
+.task i{
+    cursor: pointer;
+}
