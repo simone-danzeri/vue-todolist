@@ -17,7 +17,7 @@
         <h1 class="title">La mia Todo-List</h1>
         <div class="container">
             <div class="user-inputs">
-                <input type="text" placeholder="Scrivi qui il tuo nuovo elemento" v-model="newText">
+                <input type="text" placeholder="Scrivi qui il tuo nuovo elemento" v-model="newText" @keyup.enter = "addItem">
                 <button @click = "addItem">Aggiungi</button>
             </div>
             <!-- Elenco tasks -->
