@@ -49,6 +49,7 @@ createApp({
                 text: this.newText,
                 done: false
             });
+            this.newText = "";
 /*             Qui una versione alternativa che ho migliorato con la versione non commentata
             this.tasks[this.tasks.length - 1].text = this.newText;
             this.tasks[this.tasks.length - 1].done = false; */
