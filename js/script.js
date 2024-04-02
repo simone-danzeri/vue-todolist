@@ -45,9 +45,13 @@ createApp({
             this.tasks.splice(index,1);
         },
         addItem() {
-            this.tasks.push({});
+            this.tasks.push({
+                text: this.newText,
+                done: false
+            });
+/*             Qui una versione alternativa che ho migliorato con la versione non commentata
             this.tasks[this.tasks.length - 1].text = this.newText;
-            this.tasks[this.tasks.length - 1].done = false;
+            this.tasks[this.tasks.length - 1].done = false; */
         }
     }
 }).mount('#app');
