@@ -43,7 +43,17 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid coral;
+    padding: 10px 0;
 }
+
 .task i{
     cursor: pointer;
+}
+
+.task span{
+    cursor: pointer;
+}
+
+.done{
+    text-decoration: line-through;
 }

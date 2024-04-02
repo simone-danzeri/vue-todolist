@@ -23,8 +23,8 @@
             <!-- Elenco tasks -->
             <div class="user-tasks">
                 <!-- Singola task -->
-                <div class="task">
-                    <span>[Nome task]</span>
+                <div v-for="eachTask in tasks" class="task">
+                    <span :class="(eachTask.done) ? 'done' : '' ">{{ eachTask.text }}</span>
                     <span>
                         <i class="fa-solid fa-xmark"></i>
                     </span>

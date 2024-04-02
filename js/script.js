@@ -5,7 +5,7 @@ Questa volta però ogni todo sarà un oggetto, formato da due proprietà:
 - done, un booleano (true/false) che indica se il todo è stato fatto oppure no
 MILESTONE 1
 Stampare all'interno di una lista HTML un item per ogni todo.
-Se la proprietà done è uguale a true, visualizzare il testo del todo sbarrato.
+Se la proprietà done è uguale a true, visualizzare il testo del modo sbarrato.
 MILESTONE 2
 Visualizzare a fianco ad ogni item ha una "x": cliccando su di essa, il todo viene rimosso dalla lista.
 MILESTONE 3
@@ -22,7 +22,7 @@ createApp({
                 },
                 {
                     text: 'Fare il bucato',
-                    done: false
+                    done: true
                 },
                 {
                     text: 'Buttare la spazzatura',
