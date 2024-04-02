@@ -23,9 +23,9 @@
             <!-- Elenco tasks -->
             <div class="user-tasks">
                 <!-- Singola task -->
-                <div v-for="eachTask in tasks" class="task">
+                <div v-for="eachTask,index in tasks" class="task">
                     <span :class="(eachTask.done) ? 'done' : '' ">{{ eachTask.text }}</span>
-                    <span>
+                    <span @click = "removeItem(index)">
                         <i class="fa-solid fa-xmark"></i>
                     </span>
                 </div>

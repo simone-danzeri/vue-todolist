@@ -40,6 +40,8 @@ createApp({
         };
     },
     methods : {
-
+        removeItem(index) {
+            this.tasks.splice(index,1);
+        }
     }
 }).mount('#app');
