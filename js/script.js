@@ -13,46 +13,46 @@ Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul p
 const { createApp } = Vue;
 
 createApp({
-    data() {
-        return {
-            newText: "",
-            tasks: [
-                {
-                    text: 'Pulire la casa',
-                    done: false
-                },
-                {
-                    text: 'Fare il bucato',
-                    done: true
-                },
-                {
-                    text: 'Buttare la spazzatura',
-                    done: false
-                },
-                {
-                    text: 'Fare i compiti',
-                    done: false
-                },
-                {
-                    text: 'Cambiare la lampadina',
-                    done: false
-                },
-            ]
-        };
-    },
-    methods : {
-        removeItem(index) {
-            this.tasks.splice(index,1);
+  data() {
+    return {
+      newText: "",
+      tasks: [
+        {
+          text: "Pulire la casa",
+          done: false,
         },
-        addItem() {
-            this.tasks.push({
-                text: this.newText,
-                done: false
-            });
-            this.newText = "";
-/*             Qui una versione alternativa che ho migliorato con la versione non commentata
+        {
+          text: "Fare il bucato",
+          done: true,
+        },
+        {
+          text: "Buttare la spazzatura",
+          done: false,
+        },
+        {
+          text: "Fare i compiti",
+          done: false,
+        },
+        {
+          text: "Cambiare la lampadina",
+          done: false,
+        },
+      ],
+    };
+  },
+  methods: {
+    removeItem(index) {
+      this.tasks.splice(index, 1);
+    },
+    addItem() {
+      this.tasks.push({
+        text: this.newText,
+        done: false,
+      });
+      this.newText = "";
+      /*             Qui una versione alternativa che ho migliorato con la versione non commentata
             this.tasks[this.tasks.length - 1].text = this.newText;
             this.tasks[this.tasks.length - 1].done = false; */
-        }
-    }
-}).mount('#app');
+    },
+  },
+}).mount("#app");
