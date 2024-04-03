@@ -35,6 +35,7 @@
         <div class="user-tasks">
           <!-- Singola task -->
           <div v-for="eachTask,index in tasks" class="task">
+            <!-- Qui l'aggiunta dinamica della classe si poteva fare anche con {'done' : eachTask.done} -->
             <span :class="(eachTask.done) ? 'done' : '' "
               >{{ eachTask.text }}</span
             >
